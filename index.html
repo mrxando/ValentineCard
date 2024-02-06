@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="container">
+        <div class="card">
+            <img  src="capybara-heart.gif" alt="capybar gif" srcset="">
+            
+        </div>
+        <h1>Will you be my Valentine?🐧💖
+        </h1>
+        
+    </div>
+    <div class="answers">
+        <button class="btn btnYes">Yes🎉</button>
+        <button class="btn btnNo">No😢</button>
+    </div>
+    </div>
+    <script>
+        const btnYes = document.querySelector(".btnYes")
+        const btnNo = document.querySelector(".btnNo")
+        const wrapper = document.querySelector(".wrapper")
+        let fontsize = 24;
+       
+        btnYes.addEventListener("click", () => {
+
+            confetti();
+            wrapper.innerHTML = '<img class="teddy" src="teddy.png" alt="capybar gif" srcset="">'
+            confetti();
+        })
+
+        btnNo.addEventListener("click", () => {
+            console.log(fontsize)
+            fontsize += 12;
+            btnYes.style.fontSize = `${fontsize}px`;
+        })
+    </script>
+</body>
+</html>

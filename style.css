@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF69B4;
+}
+
+.answers{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.container{
+    margin-bottom: 5vh;
+}
+
+
+.btn {
+    appearance: none;
+      -webkit-appearance: none;
+    font-family: sans-serif;
+    cursor: pointer;
+    padding: 12px;
+    min-width: 100px;
+    border-radius: 5px;
+    border: 0px;
+      -webkit-transition: background-color 100ms linear;
+      -ms-transition: background-color 100ms linear;
+       transition: background-color 100ms linear;
+    
+  }
+
+
+  .btnYes {
+    background: #2ecc71;
+    color: #ffffff;
+    font-size: 24px;
+  }
+
+  .btnYes :hover {
+    background: #27ae60;
+    color: #ffffff;
+  }
+
+
+  .btnNo {
+    background: #e74c3c;
+    color: #ffffff;
+    font-size: 24px;
+  }
+  
+  .btnNo {
+    padding: 6px;
+    min-width: 50px;
+    background: #c0392b;
+    color: #ffffff;
+  }
+
+  .teddy{
+    height: 100vh;
+  }
+  
